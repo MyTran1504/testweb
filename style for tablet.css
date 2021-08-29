@@ -1,0 +1,100 @@
+body {
+    width: 85%;
+    margin: auto;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    padding: 15px;
+  }
+ 
+  /* For tablets: */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+    
+    .menu-tablet {
+        height: 60px;
+        width: 100%;
+        font-size: 14px;
+        background-color: darkgrey;
+        padding-top: 8px;
+    }
+    .menu-tablet a {
+        text-decoration: none;
+        font-weight: 1px;
+        color: grey;
+        text-transform: uppercase;
+        color: white;
+    }
+    .menu-tablet a:hover {
+        color: blue;
+    }
+    .menu-tablet ul {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-inline-end: 25px;
+    }
+    .menu-tablet ul li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .menu-tablet ul li:nth-child(3) {
+        margin-left: auto;
+    }
+    .banner-tablet img { display: none; }
+    .banner-tablet p h1 { position: static; 
+                          font-family:Verdana;
+    }
+    .main-content-tablet {
+    padding: 30px 0px;
+    margin-left: auto;
+    }
+    .main-content-tablet h2 {
+    margin-block-start: 0px;
+    font-family: 'Lucida Sans';
+    }
+    .main-content-tablet .table-img {
+    justify-content: space-between;
+    margin-block-start: 0px;
+    }
+    .main-content-tablet .table-img .col {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    }
+    .main-content-tablet.table-img .col img {
+    width: 100%;
+    }
+    .footer {
+        justify-content: space-evenly;
+        background-color: white;
+    }
+    .footer a {
+        text-decoration: underline;
+        color: deepskyblue;        
+    }       
+    .footer .col {
+        width: 31%;
+    } 
+}    

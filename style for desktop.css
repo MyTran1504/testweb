@@ -1,0 +1,107 @@
+body {
+    width: 85%;
+    margin: auto;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  /* For desktop: */
+  @media only screen and (min-width: 992px) {
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+    .menu-desktop ul {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-inline-end: 25px;
+    }
+    .menu-desktop ul li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .menu-desktop li:nth-child(3) {
+        margin-left: auto;
+    }
+    .menu-desktop a {
+            height: 30px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+    }
+    .menu-desktop a {
+            text-decoration: none;
+            font-weight: 1px;
+            color: grey;
+            text-transform: uppercase;
+    }
+    .menu-desktop a:hover {
+            color: blue;
+    }
+    .banner-desktop {
+            position: relative;
+            width: 100%;
+            display: flex;
+    }
+    .banner-desktop h1 {
+            position: absolute;
+            color: white;
+            top: 90px;
+            left: 30px;
+    }
+    .banner-desktop p {
+            position: absolute;
+            color: white;
+            top: 140px;
+            left: 30px;
+    }
+    .banner-desktop img {
+            width: 100%;
+            height: 335px; 
+    }   
+    .hr {
+        display: none;
+    }  
+    .main-content-desktop {
+        background-color: lightgrey;
+        padding: 30px 38px;
+    }
+    .main-content-desktop h2 {
+        margin-block-start: 0px; 
+    }      
+    .footer {
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    }
+    .footer a {
+    text-decoration: underline;
+    color: deepskyblue;        
+    }       
+    .footer .col {
+    width: 31%;
+    }   
+}
